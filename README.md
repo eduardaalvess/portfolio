@@ -5,4 +5,4 @@
 
 [Template Utilizado](https://startbootstrap.com/theme/resume)
 
-// ADD GIF
+![GIF IMAGE](https://github.com/eduardaalvess/portfolio/blob/master/gif/portifolio-visualizacao.gif)
