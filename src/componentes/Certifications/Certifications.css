@@ -1,0 +1,45 @@
+.certifications-section {
+    padding: 50px 20px;
+    background-color: #f7f7f7; /* Cor de fundo leve */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    color: #F08080; /* Cor do título */
+    margin-bottom: 30px;
+    font-family: 'Titillium Web', sans-serif; /* Fonte da navbar */
+  }
+  
+  .certifications {
+    display: flex;
+    flex-wrap: wrap; /* Organiza em várias linhas, se necessário */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+  }
+  
+  .certificado {
+    background-color: #ffffff; /* Fundo branco para os cartões */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .certificado:hover {
+    transform: translateY(-5px); /* Eleva ligeiramente o cartão */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+  }
+  
+  .certificado h3 {
+    color: #68417a; /* Cor do título do certificado */
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  .certificado p {
+    color: #555; /* Cor do texto */
+    font-size: 1em;
+  }
+  

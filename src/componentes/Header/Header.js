@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import imagemPerfil from '../../img/eduarda-alves.jpg'; 
 
 function Header() {
     const [text, setText] = useState('');
@@ -22,7 +23,7 @@ function Header() {
 
     return (
         <header className="header">
-            <div>
+            <div className="header-text">
                 <h1>{text}</h1>
                 <h4>Seja bem-vindo ao meu portfólio.</h4>
                 <p className="lead">
@@ -30,6 +31,7 @@ function Header() {
                     Tenho experiências nas linguagens: Java, Python, JavaScript e C# e nos frameworks Spring Boot, React e .NET.
                 </p>
             </div>
+            <img src={imagemPerfil} alt="Eduarda Alves" className="perfil-imagem" />
         </header>
     );
 }

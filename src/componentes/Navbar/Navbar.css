@@ -1,9 +1,43 @@
-.navbar-nav .nav-link {
-    margin-right: 20px; 
-  }
-  
+/* Estilo geral da navbar */
+.custom-navbar {
+  background-color: #F08080; 
+}
+
+/* Estilo personalizado para o texto "Eduarda Alves" */
+.custom-navbar .navbar-brand {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem; /* Tamanho maior do texto */
+  color: white; /* Cor do texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Estilo para os links da navbar */
+.custom-navbar .nav-link {
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(248, 239, 239); /* Links com cor branca */
+  font-weight: bold;
+  font-size: 1.5rem; /* Tamanho do texto */
+  padding: 8px 15px; /* Espaçamento ao redor do texto */
+  transition: all 0.3s ease; /* Animação suave */
+}
+
+/* Efeito hover nos links */
+.custom-navbar .nav-link:hover {
+  color: white; 
+  background-color: #d37070; /* Fundo branco ao passar o mouse */
+  border-radius: 5px; /* Deixa o fundo arredondado */
+  text-decoration: none; /* Remove o sublinhado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Personalizando o logo da navbar */
 .navbar-brand {
-    margin-left: 20px; 
-  }
+  margin-left: 20px;
+}
   
+/* Estilo geral dos links */
+.navbar-nav .nav-link {
+  margin-right: 20px;
+}
   

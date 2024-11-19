@@ -1,12 +1,61 @@
 .header {
-    padding: 20px;
-    color: white;
-    padding: 20px; 
-    background-color: #68417a; 
-    align-items: center; 
+  display: flex; /* Flexbox para alinhamento */
+  flex-direction: column; /* Alinha em coluna por padrão */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  background-color: #F08080; /* Cor de fundo */
+  font-family: 'Titillium Web', sans-serif; /* Fonte do Google Fonts */
+  color: white; /* Deixa o texto branco */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do texto no header */
+.header-text {
+  max-width: 90%; /* Limita o tamanho do texto para telas pequenas */
+  margin-bottom: 2rem; /* Espaço abaixo do texto */
+}
+
+.header-text h1 {
+  font-size: 2.5rem; /* Tamanho do título */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+.header-text p {
+  font-size: 1.2rem; /* Tamanho do texto do parágrafo */
+  line-height: 1.5; /* Altura das linhas */
+}
+
+/* Estilo da imagem redonda */
+.perfil-imagem {
+  width: 150px; /* Tamanho padrão da imagem */
+  height: 150px; /* Tamanho padrão da imagem */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  object-fit: cover;
+  margin-top: 2rem; /* Espaço acima da imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra na imagem */
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row; /* Alinha em linha para telas grandes */
+    text-align: left; /* Alinha texto à esquerda */
+    padding: 0 10%; /* Adiciona espaço nas laterais */
   }
 
-  .header-text h1 {
-    font-size: 2em; 
+  .header-text {
+    max-width: 50%; /* Ajusta o tamanho do texto em telas maiores */
+    margin-bottom: 0; /* Remove o espaço abaixo */
+    text-align: left; /* Garante que o texto à esquerda */
   }
+
+  .perfil-imagem {
+    width: 250px; /* Aumenta o tamanho da imagem */
+    height: 250px; /* Aumenta o tamanho da imagem */
+    margin-left: 2rem; /* Espaço entre texto e imagem */
+  }
+}
+
+
   
