@@ -81,17 +81,64 @@
     line-height: 1.4;
 }
 
+.experience-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    color: #F08080;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experience-card {
+    background-color: #F08080;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experience-card h4 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .experience-card p {
+    margin: 10px 0 0;
+  }
+  
+  .experience-details {
+    margin-top: 20px;
+    background-color: white;
+    color: #F08080;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
 /* Seção "Sobre Mim" */
 #sobre-mim {
+    background-color: white;
+    color: #F08080;
     max-width: 900px; /* Limita a largura máxima */
     margin: 0 auto; /* Centraliza a seção */
-    margin-top: 50px;
     padding: 20px; /* Espaço ao redor do conteúdo */
     border-radius: 15px; /* Bordas arredondadas */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-    text-align: center; /* Centraliza o texto */
-    color: white; /* Deixa o texto branco */
-}
+  }
+  
+  #sobre-mim p:first-of-type {
+    margin-bottom: 50px; /* Espaço abaixo do texto introdutório */
+  }
 
 /* Estilo para os itens dos animais */
 .animal-item {
@@ -116,12 +163,12 @@
 
 .animal-text h4 {
     font-size: 1.5rem; /* Tamanho do título */
-    color: white; /* Cor do título */
+    color: #F08080; /* Cor do título */
 }
 
 .animal-text p {
     font-size: 1.1rem; /* Tamanho do texto */
-    color: white; /* Cor do texto */
+    color: #F08080; /* Cor do texto */
     line-height: 1.6; /* Espaçamento entre as linhas */
 }
 
