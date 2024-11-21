@@ -1,43 +1,44 @@
-/* Estilo geral da navbar */
 .custom-navbar {
-  background-color: #F08080; 
+  position: fixed; /* Fixa a navbar no topo da página */
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Garante que ocupe toda a largura */
+  background-color: #F08080; /* Cor de fundo */
+  z-index: 1000; /* Garante que a navbar fique acima de outros conteúdos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombrinha para dar um destaque */
 }
 
-/* Estilo personalizado para o texto "Eduarda Alves" */
 .custom-navbar .navbar-brand {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 2rem; /* Tamanho maior do texto */
-  color: white; /* Cor do texto */
-  font-weight: bold; /* Deixa o texto em negrito */
-  transition: color 0.3s ease; /* Transição suave de cor */
+  font-size: 2rem; 
+  color: white; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
 }
 
-/* Estilo para os links da navbar */
+/* Links da navbar */
 .custom-navbar .nav-link {
   font-family: 'Titillium Web', sans-serif;
-  color: rgb(248, 239, 239); /* Links com cor branca */
+  color: rgb(248, 239, 239); 
   font-weight: bold;
-  font-size: 1.5rem; /* Tamanho do texto */
-  padding: 8px 15px; /* Espaçamento ao redor do texto */
-  transition: all 0.3s ease; /* Animação suave */
+  font-size: 1.5rem; 
+  padding: 8px 15px; 
+  transition: all 0.3s ease; 
 }
 
 /* Efeito hover nos links */
 .custom-navbar .nav-link:hover {
   color: white; 
-  background-color: #d37070; /* Fundo branco ao passar o mouse */
-  border-radius: 5px; /* Deixa o fundo arredondado */
-  text-decoration: none; /* Remove o sublinhado */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  background-color: #d37070; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Personalizando o logo da navbar */
 .navbar-brand {
   margin-left: 20px;
 }
-  
-/* Estilo geral dos links */
+
 .navbar-nav .nav-link {
   margin-right: 20px;
 }
-  

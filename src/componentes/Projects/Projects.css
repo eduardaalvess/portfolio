@@ -1,0 +1,86 @@
+#projects {
+    padding: 50px;
+    background-color: #f08080;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif; 
+  }
+  
+  #projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .projects-category {
+    margin-bottom: 40px;
+  }
+  
+  .projects-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #d37070;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .card-links a {
+    text-decoration: none;
+    color: #f08080;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .card-links a:hover {
+    color: #d37070;
+  }
+  
+  @media (max-width: 768px) {
+    #projects h2 {
+      font-size: 1.5rem;
+    }
+  
+    .projects-category h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  

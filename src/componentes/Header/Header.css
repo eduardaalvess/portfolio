@@ -1,59 +1,59 @@
 .header {
-  display: flex; /* Flexbox para alinhamento */
-  flex-direction: column; /* Alinha em coluna por padrão */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  height: 100vh; /* Ocupa toda a altura da tela */
-  background-color: #F08080; /* Cor de fundo */
-  font-family: 'Titillium Web', sans-serif; /* Fonte do Google Fonts */
-  color: white; /* Deixa o texto branco */
-  text-align: center; /* Centraliza o texto */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #F08080; 
+  font-family: 'Titillium Web', sans-serif; 
+  color: white; 
+  text-align: center; 
 }
 
 /* Estilo do texto no header */
 .header-text {
-  max-width: 90%; /* Limita o tamanho do texto para telas pequenas */
-  margin-bottom: 2rem; /* Espaço abaixo do texto */
+  max-width: 90%; 
+  margin-bottom: 2rem; 
 }
 
 .header-text h1 {
-  font-size: 2.5rem; /* Tamanho do título */
-  margin-bottom: 1rem; /* Espaço abaixo do título */
+  font-size: 2.5rem; 
+  margin-bottom: 1rem; 
 }
 
 .header-text p {
-  font-size: 1.2rem; /* Tamanho do texto do parágrafo */
-  line-height: 1.5; /* Altura das linhas */
+  font-size: 1.2rem; 
+  line-height: 1.5; 
 }
 
 /* Estilo da imagem redonda */
 .perfil-imagem {
-  width: 150px; /* Tamanho padrão da imagem */
-  height: 150px; /* Tamanho padrão da imagem */
-  border-radius: 50%; /* Deixa a imagem redonda */
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
   object-fit: cover;
-  margin-top: 2rem; /* Espaço acima da imagem */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra na imagem */
+  margin-top: 2rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Responsividade para telas grandes */
+/* Responsividade */
 @media (min-width: 768px) {
   .header {
-    flex-direction: row; /* Alinha em linha para telas grandes */
-    text-align: left; /* Alinha texto à esquerda */
-    padding: 0 10%; /* Adiciona espaço nas laterais */
+    flex-direction: row; 
+    text-align: left; 
+    padding: 0 10%; 
   }
 
   .header-text {
-    max-width: 50%; /* Ajusta o tamanho do texto em telas maiores */
-    margin-bottom: 0; /* Remove o espaço abaixo */
-    text-align: left; /* Garante que o texto à esquerda */
+    max-width: 50%; 
+    margin-bottom: 0; 
+    text-align: left; 
   }
 
   .perfil-imagem {
-    width: 250px; /* Aumenta o tamanho da imagem */
-    height: 250px; /* Aumenta o tamanho da imagem */
-    margin-left: 2rem; /* Espaço entre texto e imagem */
+    width: 250px; 
+    height: 250px; 
+    margin-left: 2rem; 
   }
 }
 

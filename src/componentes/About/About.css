@@ -1,79 +1,79 @@
-/* Sobre.css */
-
 .about-page {
-    background-color: #F08080; /* Cor de fundo rosa para o restante da página */
-    font-family: 'Titillium Web', sans-serif; /* Fonte padrão */
-    color: white; /* Cor do texto geral (branco) */
+    background-color: #F08080; 
+    font-family: 'Titillium Web', sans-serif; 
+    color: white; 
 }
 
 .about {
-    background-color: white; /* Fundo branco para a seção */
-    color: #F08080; /* Texto rosa dentro da seção */
-    border: 2px solid #F08080; /* Borda rosa */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-    padding: 40px; /* Espaço interno da seção */
-    width: 90%; /* Largura flexível */
-    max-width: 900px; /* Limita a largura máxima */
-    margin: auto; /* Centraliza a seção horizontalmente */
-    text-align: center; /* Centraliza o texto dentro da seção */
+    background-color: white; 
+    color: #d37070; 
+    border: 2px solid #F08080; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    padding: 40px; 
+    width: 90%; 
+    max-width: 900px; 
+    margin: auto; 
+    text-align: center; 
+}
+
+.about h2 {
+    font-weight: bold;
 }
 
 #educacao h2 {
-    text-align: center; /* Centraliza o título */
-    margin-top: 80px; /* Afastar mais do item acima */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center; 
+    margin-top: 80px; 
+    margin-bottom: 20px; 
+    font-weight: bold;
 }
 
-/* Estilos para a linha do tempo */
+/* Linha do tempo */
 .timeline {
-    display: flex; /* Usamos flexbox para centralizar */
-    flex-direction: column; /* A linha do tempo será vertical */
-    align-items: center; /* Centraliza todos os itens horizontalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     position: relative;
     padding: 20px;
-    margin: 0 auto; /* Centraliza a linha do tempo na página */
-    max-width: 800px; /* Limita a largura máxima da linha do tempo */
+    margin: 0 auto; 
+    max-width: 800px; 
 }
 
-/* Estilo para cada item da linha do tempo */
 .timeline-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza cada item da linha do tempo */
+    align-items: center; 
     position: relative;
-    margin-bottom: 40px; /* Espaçamento entre os eventos */
+    margin-bottom: 40px; 
 }
 
-/* Linha que conecta os itens da linha do tempo */
 .timeline-item::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 50%; /* Posiciona a linha no centro */
-    transform: translateX(-50%); /* Ajuste fino para centralizar */
+    left: 50%; 
+    transform: translateX(-50%); /* Centralizar */
     width: 10px;
-    height: 100%; /* Deixa a linha ocupando o tamanho total */
-    background-color: #d37070; /* Cor da linha do tempo */
+    height: 100%; 
+    background-color: #d37070; 
     border-radius: 5px;
 }
 
-/* Estilo do conteúdo do item */
 .timeline-content {
     background-color: white;
-    color: #F08080; /* Cor do texto da linha do tempo */
+    color: #F08080; 
     padding: 15px;
-    border: 2px solid #F08080; /* Borda rosa */
+    border: 2px solid #F08080; 
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Largura fixa para o conteúdo */
-    margin-top: 30px; /* Distância entre o conteúdo e a linha */
-    z-index: 1; /* Garante que o conteúdo fique acima da linha */
+    width: 250px; 
+    margin-top: 30px; 
+    z-index: 1; 
 }
 
 .timeline h4 {
     font-size: 1.5rem;
-    margin-bottom: 10px; /* Espaço abaixo do ano */
+    margin-bottom: 10px; 
 }
 
 .timeline p {
@@ -124,77 +124,75 @@
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
   }
   
-
-/* Seção "Sobre Mim" */
 #sobre-mim {
     background-color: white;
-    color: #F08080;
-    max-width: 900px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza a seção */
-    padding: 20px; /* Espaço ao redor do conteúdo */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    color: #d37070;
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
   }
   
   #sobre-mim p:first-of-type {
-    margin-bottom: 50px; /* Espaço abaixo do texto introdutório */
+    margin-bottom: 50px; 
   }
 
-/* Estilo para os itens dos animais */
+/* Animais */
 .animal-item {
-    display: flex; /* Flexbox para alinhar a imagem e o texto */
-    align-items: center; /* Alinha verticalmente a imagem e o texto */
-    margin-bottom: 20px; /* Espaço entre os itens */
-    gap: 25px; /* Espaçamento entre a imagem e o texto */
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    gap: 25px; 
 }
 
 .animal-img {
-    width: 150px; /* Largura da imagem */
-    height: 150px; /* Altura da imagem */
-    border-radius: 50%; /* Faz a imagem redonda */
-    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorção */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .animal-text {
-    flex: 1; /* Garante que o texto ocupe o restante do espaço */
-    margin-right: 20px; /* Espaço entre o texto e a borda direita */
+    flex: 1; 
+    margin-right: 20px; 
 }
 
 .animal-text h4 {
-    font-size: 1.5rem; /* Tamanho do título */
-    color: #F08080; /* Cor do título */
+    font-size: 1.5rem; 
+    color: #d37070; 
 }
 
 .animal-text p {
-    font-size: 1.1rem; /* Tamanho do texto */
-    color: #F08080; /* Cor do texto */
-    line-height: 1.6; /* Espaçamento entre as linhas */
+    font-size: 1.1rem; 
+    color: #d37070; 
+    line-height: 1.6; 
 }
 
-/* Responsividade - Ajustando a largura para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
     #sobre {
-        max-width: 90%; /* Reduz a largura máxima para telas pequenas */
-        padding: 15px; /* Menos padding em telas pequenas */
+        max-width: 90%; 
+        padding: 15px; 
     }
 
     .timeline {
-        margin-left: 20px; /* Menos espaço entre a linha e o conteúdo */
+        margin-left: 20px; 
     }
 
     .timeline-content {
-        width: 100%; /* Aumenta a largura para ocupar toda a tela */
+        width: 100%; 
     }
 
     .animal-item {
-        flex-direction: column; /* Alinha os itens na vertical em telas pequenas */
-        text-align: center; /* Centraliza o texto em telas pequenas */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .animal-img {
-        width: 120px; /* Tamanho reduzido da imagem em telas pequenas */
+        width: 120px; 
         height: 120px;
-        margin-bottom: 10px; /* Espaço abaixo da imagem */
+        margin-bottom: 10px; 
     }
 }

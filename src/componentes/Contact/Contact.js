@@ -16,31 +16,24 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    console.log("Função de envio de e-mail foi chamada.");
   
     const templateParams = {
-      from_name: formData.name,      // Nome do remetente (quem preencheu o formulário)
-      message: formData.message,     // Mensagem do remetente
-      reply_to: formData.email,      // E-mail do remetente
+      from_name: formData.name,
+      message: formData.message,
+      reply_to: formData.email,
     };
 
-    console.log("Dados do formulário:", formData);
-
-
-    console.log("Valores dos parâmetros enviados para o template:", templateParams);
-  
     emailjs
       .send(
-        "service_7bkfc6o",           // Substitua pelo seu Service ID
-        "template_wpyngpo",          // Substitua pelo seu Template ID
-        templateParams,              // Passa os parâmetros para o template
-        "rRaFaTr-gIZFosh1g"          // Substitua pelo seu Public Key
+        "service_7bkfc6o", 
+        "template_wpyngpo", 
+        templateParams,      
+        "rRaFaTr-gIZFosh1g"   
       )
       .then(
         (result) => {
           alert("Mensagem enviada com sucesso!");
-          setFormData({ name: "", email: "", message: "" }); // Limpa o formulário
+          setFormData({ name: "", email: "", message: "" }); 
         },
         (error) => {
           alert("Erro ao enviar mensagem, tente novamente.");
@@ -50,7 +43,7 @@ const ContactForm = () => {
   
 
   return (
-    <div className="contato-section">
+    <div className="contato-section" id="contact">
       <h2>Entre em Contato</h2>
       <form onSubmit={sendEmail} className="form-container">
         <label htmlFor="name">Nome</label>
