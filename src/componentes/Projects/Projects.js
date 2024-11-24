@@ -1,5 +1,6 @@
 import React from 'react';
 import './Projects.css';
+import netflixImage from '../../img/netflix.gif'
 
 function Projects() {
   return (
@@ -35,7 +36,7 @@ function Projects() {
                 de serviços back-end, estrutura MVC e uso de bancos de dados relacionais.
               </p>
               <div className="card-links">
-                <a href="link-do-github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/eduardaalvess/mercadinho" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="link-da-demo" target="_blank" rel="noopener noreferrer">Demo</a>
               </div>
             </div>
@@ -145,6 +146,19 @@ function Projects() {
               <div className="card-links">
                 <a href="link-do-github" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="link-da-demo" target="_blank" rel="noopener noreferrer">Demo</a>
+              </div>
+            </div>
+          </div>
+          <div className="project-card">
+            <img src={netflixImage} alt="NetFlix Layout" />
+            <div className="card-content">
+              <h3>Netflix Layout</h3>
+              <p> Projeto desenvolvido durante o bootcamp de HTML Web Developer da DIO,
+                onde o desafio foi recriar a interface do serviço de streaming Netflix. 
+              </p>
+              <div className="card-links">
+                <a href="https://github.com/eduardaalvess/netflix-layout?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/eduardaalvess/netflix-layout/blob/master/github/imagem.gif" target="_blank" rel="noopener noreferrer">Demo</a>
               </div>
             </div>
           </div>
